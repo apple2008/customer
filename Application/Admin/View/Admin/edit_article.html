@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<!-- 与首页的一样  重复加载 start -->
+<include file="Assis:init_css"/>
+<!-- 与首页的一样  重复加载 end -->
+
+<!-- 文本编辑框的css和js start -->
+<link rel="stylesheet" href="/kind/themes/default/default.css"/>
+<link rel="stylesheet" href="/kind/plugins/code/prettify.css"/>
+<script charset="utf-8" src="/kind/kindeditor.js"></script>
+<script charset="utf-8" src="/kind/lang/zh_CN.js"></script>
+<script charset="utf-8" src="/kind/plugins/code/prettify.js"></script>
+<script>
+		KindEditor.ready(function(K) {
+			var editor1 = K.create('textarea[name="content"]', {
+				cssPath : '/kind/plugins/code/prettify.css',
+				uploadJson : '/kind/php/upload_json.php',
+				fileManagerJson : '/kind/php/file_manager_json.php',
+				allowFileManager : true,
+				afterCreate : function() {
+					var self = this;
+					K.ctrl(document, 13, function() {
+						self.sync();
+						K('form[name=example]')[0].submit();
+					});
+					K.ctrl(self.edit.doc, 13, function() {
+						self.sync();
+						K('form[name=example]')[0].submit();
+					});
+				},
+				afterBlur:function(){this.sync();}
+			});
+			prettyPrint();
+		});
+</script>
+<style type="text/css">
+.ke-dialog-row{
+	margin: 0px;
+}
+.ke-dialog-row .ke-input-text{
+	color: #000;
+	background-color: #fff;
+}
+</style>
+<!-- 文本编辑框的css和js end -->
+<style type="text/css">
+.one_img_uplode{
+border: 1px solid #696;padding: 60px 0;text-align: center; width: 200px;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+-webkit-box-shadow: #666 0px 0px 10px;
+-moz-box-shadow: #666 0px 0px 10px;
+}
+
+</style>
+<!-- 时间控件 -->
+<link rel="stylesheet" href="__PUBLIC__/common/css/calendar.css">
+<style type="text/css">
+.calendar ul, .calendar ol, .calendar li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+</style>
+<!-- 时间控件 -->
+</head>
+
+
+<body>
+<include file="Assis:add_article_ball"/>
+
+
+
+<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('/Admin/index/articleManage')}" >意向客户管理</a></li>
+			<li class="active"><a href="{:U('/Admin/index/editArticle')}" >编辑客户</a></li>
+		</ul>
+		<form name="example" action="/Admin/index/upload_article" method="post" class="form-horizontal js-ajax-forms" id="upload_article" enctype="multipart/form-data" novalidate="novalidate">
+		
+		    <input type="hidden" name="article_id" value="{$articlePart['id']}" />
+			<div class="row-fluid">
+				<div class="span9">
+					<table class="table table-bordered">
+						<tbody><tr>
+							<th width="80">分类</th>
+							<td>
+								<select name="post[cate_id]">
+									   <option value="1" <if condition="$articlePart['cate_id'] eq 1">selected</if>>A类</option>
+										<option value="2" <if condition="$articlePart['cate_id'] eq 2">selected</if>>B类</option>
+										<option value="3" <if condition="$articlePart['cate_id'] eq 3">selected</if>>C类</option>
+									</if>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th>项目名称</th>
+							<td>
+								<input type="text" style="width:400px;" name="post[project]" id="project" required="" value="{$articlePart['project']}" placeholder="项目名称" aria-required="true">
+								<span class="form-required"></span>
+							</td>
+						</tr>
+						<tr>
+							<th>企业名称</th>
+							<td>
+								<input type="text" style="width:400px;" name="post[corp_name]" id="title" required="" value="{$articlePart['corp_name']}" placeholder="企业名称" aria-required="true">
+								<span class="form-required"></span>
+							</td>
+						</tr>
+						<tr>
+							<th>地址</th>
+							<td><input type="text" name="post[address]" id="address" value="{$articlePart['address']}" style="width: 400px" placeholder="请输入地址"> </td>
+						</tr>
+						<tr>
+							<th>联系人</th>
+							<td><input type="text" name="post[name]" id="name" value="{$articlePart['name']}" style="width: 400px" placeholder="请输入联系人"></td>
+						</tr>
+						<tr>
+							<th>职位</th>
+							<td><input type="text" name="post[position]" id="position" value="{$articlePart['position']}" style="width: 400px" placeholder="请输入职位"></td>
+						</tr>
+						<tr>
+							<th>电话</th>
+							<td><input type="text" name="post[telphone]" id="telphone" value="{$articlePart['telphone']}" style="width: 400px" placeholder="请输入电话"></td>
+						</tr>
+						<tr>
+							<th>手机号</th>
+							<td><input type="text" name="post[mobile]" id="mobile" value="{$articlePart['mobile']}" style="width: 400px" placeholder="请输入手机号"></td>
+						</tr>
+						<tr>
+							<th>邮箱</th>
+							<td><input type="text" name="post[email]" id="email" value="{$articlePart['email']}" style="width: 400px" placeholder="请输入邮箱"></td>
+						</tr>
+						<tr>
+							<th>业务</th>
+							<td><input type="text" name="post[email]" id="business" value="{$articlePart['business']}" style="width: 400px" placeholder="请输入业务"></td>
+						</tr>
+						<tr>
+							<th>企业人数</th>
+							<td><input type="text" name="post[corp_num]" id="corp_num" value="{$articlePart['corp_num']}" style="width: 400px" placeholder="请输入企业人数"></td>
+						</tr>
+						<tr>
+							<th>来源</th>
+							<td><input type="text" name="post[source]" id="source" value="{$articlePart['source']}" style="width: 400px" placeholder="请输入来源"></td>
+						</tr>
+						<tr>
+							<th>跟进记录</th>
+							<td>
+								<textarea name="post[mark]" id="mark" style="width: 98%; height: 70px;" placeholder="请填写跟进记录">{$articlePart['mark']}</textarea>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="form-actions">
+				<a class="btn btn-primary js-ajax-submit" href="javascript:;" onclick="ajax_post_article_edit()">提交</a>
+				<a class="btn" href="javascript:;">返回</a>
+				<!-- <button class="btn btn-primary js-ajax-submit" type="submit">提交1</button> -->
+			</div>
+		</form>
+</div>
+
+<include file="Assis:init_js"/>
+<script type="text/javascript" src="__PUBLIC__/admin/js/ajaxpost_article.js?v=2019222"></script>
+<!-- 时间控件 -->
+<script src="__PUBLIC__/common/js/calendar.js"></script>
+		<script>
+		    $('#ca').calendar({
+		        width: 320,
+		        height: 320,
+		        data: [
+					{
+					  date: '2015/12/24',
+					  value: 'Christmas Eve'
+					},
+					{
+					  date: '2015/12/25',
+					  value: 'Merry Christmas'
+					},
+					{
+					  date: '2016/01/01',
+					  value: 'Happy New Year'
+					}
+				],
+		    });
+            $('#start_times').calendar({
+		        trigger: '#start_time',
+		        zIndex: 999,
+				format: 'yyyy-mm-dd',
+		    });
+
+		    
+		</script>
+<!-- 时间控件 -->
+
+</body>
+</html>

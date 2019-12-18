@@ -1,0 +1,1131 @@
+[ 2019-12-16T13:32:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+NOTIC: [8] Undefined index: AdminUserInfo E:\xampp\htdocs\cms\Application\Admin\Controller\AdminUserController.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.010411s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.010453s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+
+[ 2019-12-16T13:32:41+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Undefined index: AdminUserInfo E:\xampp\htdocs\cms\Application\Admin\Controller\AdminUserController.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000015s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+
+[ 2019-12-16T13:32:43+08:00 ] 127.0.0.1 /Admin/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000267s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015006s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015038s ]
+
+[ 2019-12-16T13:32:43+08:00 ] 127.0.0.1 /Admin/index/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2019-12-16T13:32:51+08:00 ] 127.0.0.1 /Admin/index/getVerify/0.5107464834798572
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2019-12-16T13:32:56+08:00 ] 127.0.0.1 /Admin/AdminUser/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user` [ RunTime:0.0585s ]
+SQL: SELECT `id`,`user`,`pwd`,`user_name`,`exa_juris` FROM `customer_admin_user` WHERE `user` = 'admin' AND `pwd` = '3e7ef2d52d4916ea428fd42daebd4a16' LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0174s ]
+SQL: UPDATE `customer_admin_user_record` SET `session`='4uuiq6mob2055r83s2k152oet4' WHERE `uid` = null [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2019-12-16T13:32:58+08:00 ] 127.0.0.1 /Admin/index/getVerify/0.5459036385273279
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2019-12-16T13:33:28+08:00 ] 127.0.0.1 /Admin/AdminUser/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`user`,`pwd`,`user_name`,`exa_juris` FROM `customer_admin_user` WHERE `user` = 'admin' AND `pwd` = 'c550959926ea7636f849ccf1720c4972' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0031s ]
+SQL: UPDATE `customer_admin_user_record` SET `session`='4uuiq6mob2055r83s2k152oet4' WHERE `uid` = 1 [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2019-12-16T13:33:28+08:00 ] 127.0.0.1 /Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0028s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_admin_menu` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=0 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=2 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=12 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=13 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=14 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=19 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=22 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=36 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=28 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=29 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=32 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2019-12-16T13:33:28+08:00 ] 127.0.0.1 /Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0070s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined index: SYSTEMROOT E:\xampp\htdocs\cms\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 110 行.
+NOTIC: [8] Undefined index: PHP_FCGI_MAX_REQUESTS E:\xampp\htdocs\cms\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 115 行.
+NOTIC: [8] Undefined index: _FCGI_SHUTDOWN_EVENT_ E:\xampp\htdocs\cms\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 117 行.
+NOTIC: [8] Undefined index: HTTP_ACCERT E:\xampp\htdocs\cms\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 163 行.
+NOTIC: [8] Undefined index: FCGI_ROLE E:\xampp\htdocs\cms\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2019-12-16T13:33:33+08:00 ] 127.0.0.1 /Admin/index/indexUserManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0042s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `customer_index_user` [ RunTime:0.0323s ]
+NOTIC: [8] Undefined variable: data E:\xampp\htdocs\cms\Application\Admin\Controller\IndexUserController.class.php 第 14 行.
+SQL: SELECT `id`,`user`,`pet_name`,`portrait`,`email`,`regi_time`,`login_time`,`login_ip`,`status` FROM `customer_index_user` ORDER BY regi_time DESC LIMIT 0,10   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: index_user_data E:\xampp\htdocs\cms\Application\Admin\Controller\IndexController.class.php 第 135 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `customer_index_user` LIMIT 1   [ RunTime:0.0158s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [2] date() expects parameter 2 to be integer, string given E:\xampp\htdocs\cms\Application\Runtime\Cache\Admin\13cceef73c23f778fdb1ec193db62743.php 第 57 行.
+NOTIC: [2] date() expects parameter 2 to be integer, string given E:\xampp\htdocs\cms\Application\Runtime\Cache\Admin\13cceef73c23f778fdb1ec193db62743.php 第 58 行.
+NOTIC: [8] Undefined index: login_id E:\xampp\htdocs\cms\Application\Runtime\Cache\Admin\13cceef73c23f778fdb1ec193db62743.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2019-12-16T13:34:34+08:00 ] 127.0.0.1 /Admin/index/mindManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0041s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0295s ]
+NOTIC: [8] Undefined variable: data E:\xampp\htdocs\cms\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT * FROM customer_mind_user as a ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined variable: article_data E:\xampp\htdocs\cms\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `customer_mind_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_index_menu` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 2  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 3  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 4  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 5  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 9  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 6  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 18  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2019-12-16T13:34:39+08:00 ] 127.0.0.1 /Admin/index/addArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0033s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `customer_index_menu` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 2  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 3  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 4  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 5  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 9  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 6  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 18  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001105s ]
+
+[ 2019-12-16T13:34:40+08:00 ] 127.0.0.1 /admin/index/plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0026s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2019-12-16T13:34:40+08:00 ] 127.0.0.1 /admin/index/plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0029s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2019-12-16T13:34:44+08:00 ] 127.0.0.1 /Admin/index/mindManage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0033s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined variable: data E:\xampp\htdocs\cms\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT * FROM customer_mind_user as a ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined variable: article_data E:\xampp\htdocs\cms\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `customer_mind_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_index_menu` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 2  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 3  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 4  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 5  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 9  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 6  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 18  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001063s ]
+
+[ 2019-12-16T13:37:30+08:00 ] 127.0.0.1 /Admin/index/mindManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0031s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: data E:\xampp\htdocs\cms\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT * FROM customer_mind_user as a ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: article_data E:\xampp\htdocs\cms\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `customer_mind_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `customer_index_menu` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 2  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 3  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 4  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 5  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 9  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 6  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 18  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2019-12-16T13:52:01+08:00 ] 127.0.0.1 /Admin/index/mindManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0035s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: data E:\xampp\htdocs\cms\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT * FROM customer_mind_user as a ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined variable: article_data E:\xampp\htdocs\cms\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `customer_mind_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `customer_index_menu` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 2  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 3  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 4  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 5  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 9  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 6  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 18  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2019-12-16T13:52:06+08:00 ] 127.0.0.1 /Admin/index/addArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0032s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_index_menu` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 2  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 3  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 4  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 5  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 9  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 6  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 18  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2019-12-16T13:52:06+08:00 ] 127.0.0.1 /admin/index/plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0026s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2019-12-16T13:52:06+08:00 ] 127.0.0.1 /admin/index/plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0027s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2019-12-16T13:52:07+08:00 ] 127.0.0.1 /Admin/index/mindManage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0038s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined variable: data E:\xampp\htdocs\cms\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT * FROM customer_mind_user as a ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: article_data E:\xampp\htdocs\cms\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `customer_mind_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `customer_index_menu` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 2  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 3  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 4  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 5  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 9  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 6  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 18  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2019-12-16T13:56:41+08:00 ] 127.0.0.1 /Admin/Index/dealManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `customer_deal_user` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: data E:\xampp\htdocs\cms\Application\Admin\Controller\DealUserController.class.php 第 178 行.
+SQL: SELECT * FROM customer_deal_user as s ORDER BY s.id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `customer_deal_user` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined variable: school_data E:\xampp\htdocs\cms\Application\Admin\Controller\IndexController.class.php 第 503 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `customer_deal_user` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined variable: current_url E:\xampp\htdocs\cms\Application\Runtime\Cache\Admin\4e97cd0a27de6bf3b88df62786a5a09c.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2019-12-16T13:56:42+08:00 ] 127.0.0.1 /Admin/index/mindManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0035s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined variable: data E:\xampp\htdocs\cms\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT * FROM customer_mind_user as a ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined variable: article_data E:\xampp\htdocs\cms\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `customer_mind_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_index_menu` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 2  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 3  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 4  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 5  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 9  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 6  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 18  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2019-12-16T13:56:56+08:00 ] 127.0.0.1 /Admin/index/addArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0035s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_index_menu` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 2  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 3  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 4  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 5  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 9  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 6  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 18  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2019-12-16T13:56:56+08:00 ] 127.0.0.1 /admin/index/plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0034s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2019-12-16T13:56:56+08:00 ] 127.0.0.1 /admin/index/plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0030s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2019-12-16T13:56:58+08:00 ] 127.0.0.1 /Admin/index/mindManage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0032s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined variable: data E:\xampp\htdocs\cms\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT * FROM customer_mind_user as a ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined variable: article_data E:\xampp\htdocs\cms\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `customer_mind_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_index_menu` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 2  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 3  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 4  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 5  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 9  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 6  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 18  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2019-12-16T14:40:58+08:00 ] 127.0.0.1 /Admin/index/mindManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0041s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: data E:\xampp\htdocs\cms\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT * FROM customer_mind_user as a ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined variable: article_data E:\xampp\htdocs\cms\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `customer_mind_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_index_menu` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 2  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 3  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 4  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 5  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 9  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 6  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 18  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000982s ]
+
+[ 2019-12-16T14:40:59+08:00 ] 127.0.0.1 /Admin/index/addArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0031s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_index_menu` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 2  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 3  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 4  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 5  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 9  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 6  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 18  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2019-12-16T14:40:59+08:00 ] 127.0.0.1 /admin/index/plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0037s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2019-12-16T14:40:59+08:00 ] 127.0.0.1 /admin/index/plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0028s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2019-12-16T14:41:02+08:00 ] 127.0.0.1 /Admin/index/mindManage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0033s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: data E:\xampp\htdocs\cms\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT * FROM customer_mind_user as a ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0037s ]
+NOTIC: [8] Undefined variable: article_data E:\xampp\htdocs\cms\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `customer_mind_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_index_menu` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 2  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 3  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 4  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 5  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 9  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 6  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 18  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2019-12-16T19:02:56+08:00 ] 127.0.0.1 /Admin/Index/dealManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `customer_deal_user` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: data E:\xampp\htdocs\cms\Application\Admin\Controller\DealUserController.class.php 第 178 行.
+SQL: SELECT * FROM customer_deal_user as s ORDER BY s.id DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `customer_deal_user` [ RunTime:0.0036s ]
+NOTIC: [8] Undefined variable: school_data E:\xampp\htdocs\cms\Application\Admin\Controller\IndexController.class.php 第 503 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `customer_deal_user` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: current_url E:\xampp\htdocs\cms\Application\Runtime\Cache\Admin\4e97cd0a27de6bf3b88df62786a5a09c.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000839s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2019-12-16T19:02:56+08:00 ] 127.0.0.1 /Admin/index/mindManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0028s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined variable: data E:\xampp\htdocs\cms\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT * FROM customer_mind_user as a ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: article_data E:\xampp\htdocs\cms\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `customer_mind_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_index_menu` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 2  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 3  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 4  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 5  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 9  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 6  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 18  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2019-12-16T19:03:10+08:00 ] 127.0.0.1 /Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0035s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_admin_menu` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=12 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=13 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=14 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=19 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=22 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=36 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=28 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=29 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_admin_menu` WHERE ( pid=32 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2019-12-16T19:03:10+08:00 ] 127.0.0.1 /Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0031s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined index: SYSTEMROOT E:\xampp\htdocs\cms\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 110 行.
+NOTIC: [8] Undefined index: PHP_FCGI_MAX_REQUESTS E:\xampp\htdocs\cms\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 115 行.
+NOTIC: [8] Undefined index: _FCGI_SHUTDOWN_EVENT_ E:\xampp\htdocs\cms\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 117 行.
+NOTIC: [8] Undefined index: HTTP_ACCERT E:\xampp\htdocs\cms\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 163 行.
+NOTIC: [8] Undefined index: FCGI_ROLE E:\xampp\htdocs\cms\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2019-12-16T19:03:11+08:00 ] 127.0.0.1 /Admin/index/mindManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0037s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0038s ]
+NOTIC: [8] Undefined variable: data E:\xampp\htdocs\cms\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT * FROM customer_mind_user as a ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined variable: article_data E:\xampp\htdocs\cms\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `customer_mind_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_index_menu` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 2  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 3  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 4  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 5  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 9  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 6  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 18  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007497s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2019-12-16T19:04:23+08:00 ] 127.0.0.1 /Admin/Index/dealManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `customer_deal_user` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined variable: data E:\xampp\htdocs\cms\Application\Admin\Controller\DealUserController.class.php 第 178 行.
+SQL: SELECT * FROM customer_deal_user as s ORDER BY s.id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `customer_deal_user` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined variable: school_data E:\xampp\htdocs\cms\Application\Admin\Controller\IndexController.class.php 第 503 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `customer_deal_user` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8] Undefined variable: current_url E:\xampp\htdocs\cms\Application\Runtime\Cache\Admin\4e97cd0a27de6bf3b88df62786a5a09c.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000436s ]
+
+[ 2019-12-16T19:04:24+08:00 ] 127.0.0.1 /Admin/index/mindManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `customer_admin_user_record` [ RunTime:0.0036s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined variable: data E:\xampp\htdocs\cms\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT * FROM customer_mind_user as a ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_mind_user` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined variable: article_data E:\xampp\htdocs\cms\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `customer_mind_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `session` FROM `customer_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `customer_index_menu` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 2  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 3  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 4  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 5  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 9  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 6  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `customer_index_menu` WHERE `pid` = 18  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+

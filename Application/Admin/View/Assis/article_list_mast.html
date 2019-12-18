@@ -1,0 +1,91 @@
+     <!--   <div class="table-actions">
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/check/check/1" data-subcheck="true">审核</button>
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/check/uncheck/1" data-subcheck="true">取消审核</button>
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/top/top/1" data-subcheck="true">置顶</button>
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/top/untop/1" data-subcheck="true">取消置顶</button>
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/recommend/recommend/1" data-subcheck="true">推荐</button>
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/recommend/unrecommend/1" data-subcheck="true">取消推荐</button>
+			<button class="btn btn-primary btn-small js-articles-copy" type="button">批量复制</button>
+			<button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/delete" data-subcheck="true" data-msg="您确定删除吗？">删除</button>
+		</div>-->
+		
+        <input id="current_url" type="hidden" name="current_url" value="{$current_url}" />
+
+		<table class="table table-hover table-bordered table-list">
+			<thead>
+				<tr>
+				<!--	<th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>-->
+					<th width="50">ID</th>
+					<th width="70">客户分类</th>
+					<th width="70">审核项目</th>
+					<th width="150">企业名称</th>
+					<th width="210">地址</th>
+					<if condition="$admin_id eq 1">
+					 	<th width="80">联系人</th>
+					</if>
+					<th width="90">职位</th>
+					<if condition="$admin_id eq 1">
+						<th width="100">电话</th>
+						<th width="100">手机</th>
+					</if>
+
+					<th width="100">邮箱</th>
+					<th width="70">业务</th>
+					<th width="70">企业人数</th>
+					<th width="60">来源</th>
+					<th width="250">跟进记录</th>
+					<th width="100">创建时间</th>
+					<th width="70">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+			  <for start="0" end="count($article_list)">
+			  	<tr>
+				 <!--  <td>
+					<input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="{$article_list[$i]['id']}" title="ID:{$article_list[$i]['id']}"></td>-->
+					<td><b>{$article_list[$i]['id']}</b></td>
+					<td>
+						<if condition="$article_list[$i]['cate_id'] eq 1">
+							<b> A 类</b>
+							<elseif condition="$article_list[$i]['cate_id'] eq 2" />
+							<b> B 类</b>
+							<else/>
+							<b>C 类</b>
+						</if>
+					</td>
+					<td>{$article_list[$i]['project']}</td>
+					<td>{$article_list[$i]['corp_name']}</td>
+					<td>{$article_list[$i]['address']}</td>
+					<if condition="$admin_id eq 1">
+					   <td>{$article_list[$i]['name']}</td>
+					</if>
+					<td>{$article_list[$i]['position']}</td>
+					<if condition="$admin_id eq 1">
+						<td>{$article_list[$i]['telphone']}</td>
+						<td>{$article_list[$i]['mobile']}</td>
+					</if>
+                    <td>{$article_list[$i]['email']}</td>
+					<td>{$article_list[$i]['business']}</td>
+					<td>{$article_list[$i]['corp_num']}</td>
+					<td>{$article_list[$i]['source']}</td>
+					<td>{$article_list[$i]['mark']}</td>
+					<td><php>echo date('Y-m-d',$article_list[$i]['create_time'])</php></td>
+					<td><a href="{:U('/Admin/index/editArticle',array('id'=>$article_list[$i]['id']))}">编辑</a> |
+						<a href="javascript:;" onclick='del_article({$article_list[$i]["id"]},$(this))' class="js-ajax-delete">删除</a>|
+						<a href="javascript:;" onclick='change_article({$article_list[$i]["id"]},$(this))' class="js-ajax-delete">一键转换</a>
+					</td>
+
+				 </tr>
+			  </for>
+				
+
+			</tbody>
+            
+
+		</table>
+			<div id="page" class="wp-paginate">
+             	{$page}
+            </div>
+
+            
+            

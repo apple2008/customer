@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+		form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
+		.table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
+		.table-list{margin-bottom: 0px;}
+	</style>
+	<include file="Assis:init_css"/>
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('/Admin/index/majorManage')}" >行程管理</a></li>
+			<li class="active"><a href="{:U('/Admin/index/collegeMajorAdd')}" >添加本周行程</a></li>
+			<li><a href="{:U('/Admin/index/collegeMajorNextAdd')}" >添加下周行程</a></li>
+
+		</ul>
+		<form id="add_index_menu" name="edit_college" action="{:U('/Admin/College/ajaxAddMajor')}" method="post" class="form-horizontal js-ajax-form" novalidate="novalidate">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">{$week_list[0]['date']}   {$week_list[0]['week']}</label>
+					<div class="controls">
+						<input type="text" name="content[]" id="outlink_input1" class="valid" aria-invalid="false" placeholder="">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{$week_list[1]['date']}   {$week_list[1]['week']}</label>
+					<div class="controls">
+						<input type="text" name="content[]" id="outlink_input2" class="valid" aria-invalid="false" placeholder="">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{$week_list[2]['date']}   {$week_list[2]['week']}</label>
+					<div class="controls">
+						<input type="text" name="content[]" id="outlink_input3" class="valid" aria-invalid="false" placeholder="">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{$week_list[3]['date']}   {$week_list[3]['week']}</label>
+					<div class="controls">
+						<input type="text" name="content[]" id="outlink_input4" class="valid" aria-invalid="false" placeholder="">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{$week_list[4]['date']}   {$week_list[4]['week']}</label>
+					<div class="controls">
+						<input type="text" name="content[]" id="outlink_input5" class="valid" aria-invalid="false" placeholder="">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{$week_list[5]['date']}   {$week_list[5]['week']}</label>
+					<div class="controls">
+						<input type="text" name="content[]" id="outlink_input6" class="valid" aria-invalid="false" placeholder="">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{$week_list[6]['date']}   {$week_list[6]['week']}</label>
+					<div class="controls">
+						<input type="text" name="content[]" id="outlink_input7" class="valid" aria-invalid="false" placeholder="">
+					</div>
+				</div>
+
+			</fieldset>
+			<div class="form-actions">
+				<button type="button" onclick="addCollege()" class="btn btn-primary js-ajax-submit">添加</button>
+				<a class="btn" href="javascript:history.back(-1);">返回</a>
+			</div>
+
+		</form>
+	</div>
+
+<include file="Assis:init_js"/>
+<script type="text/javascript" src="__PUBLIC__/admin/js/ajaxpost_college.js?v=2019098909"></script>
+</body>
+</html>

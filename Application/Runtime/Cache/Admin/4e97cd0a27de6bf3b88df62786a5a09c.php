@@ -45,6 +45,8 @@
 		 &nbsp; &nbsp;
 		公司名称：
 		<input type="text" name="name" style="width: 200px;" value="" placeholder="请输入公司名称">
+		业务：
+		<input type="text" name="business" style="width: 200px;" value="" placeholder="请输入业务">
 		<input type="button" onclick="sel_college_list()" class="btn btn-primary" value="搜索">
 		<input type="reset" class="btn btn-danger" value="清空">
 	</form>
@@ -89,7 +91,7 @@
 				</tr>
 			</thead>
 			<tbody>
-			  <?php $__FOR_START_9459__=0;$__FOR_END_9459__=count($college_list);for($i=$__FOR_START_9459__;$i < $__FOR_END_9459__;$i+=1){ ?><tr>
+			  <?php $__FOR_START_5010__=0;$__FOR_END_5010__=count($college_list);for($i=$__FOR_START_5010__;$i < $__FOR_END_5010__;$i+=1){ ?><tr>
 				  <!-- <td>
 					<input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="<?php echo ($college_list[$i]['id']); ?>" title="ID:<?php echo ($college_list[$i]['id']); ?>"></td>-->
 					<td><b><?php echo ($college_list[$i]['id']); ?></b></td>

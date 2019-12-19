@@ -17,7 +17,7 @@
 				<!--	<th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>-->
 					<th width="50">ID</th>
 					<th width="70">客户分类</th>
-					<th width="70">项目</th>
+					<th width="70">审核项目</th>
 					<th width="150">企业名称</th>
 					<th width="210">地址</th>
 					<?php if($admin_id == 1): ?><th width="80">联系人</th><?php endif; ?>
@@ -26,6 +26,7 @@
 						<th width="100">手机</th><?php endif; ?>
 
 					<th width="100">邮箱</th>
+					<th width="70">业务</th>
 					<th width="70">企业人数</th>
 					<th width="60">来源</th>
 					<th width="250">跟进记录</th>
@@ -34,7 +35,7 @@
 				</tr>
 			</thead>
 			<tbody>
-			  <?php $__FOR_START_114__=0;$__FOR_END_114__=count($article_list);for($i=$__FOR_START_114__;$i < $__FOR_END_114__;$i+=1){ ?><tr>
+			  <?php $__FOR_START_21967__=0;$__FOR_END_21967__=count($article_list);for($i=$__FOR_START_21967__;$i < $__FOR_END_21967__;$i+=1){ ?><tr>
 				 <!--  <td>
 					<input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="<?php echo ($article_list[$i]['id']); ?>" title="ID:<?php echo ($article_list[$i]['id']); ?>"></td>-->
 					<td><b><?php echo ($article_list[$i]['id']); ?></b></td>
@@ -53,12 +54,14 @@
 					<?php if($admin_id == 1): ?><td><?php echo ($article_list[$i]['telphone']); ?></td>
 						<td><?php echo ($article_list[$i]['mobile']); ?></td><?php endif; ?>
                     <td><?php echo ($article_list[$i]['email']); ?></td>
+					<td><?php echo ($article_list[$i]['business']); ?></td>
 					<td><?php echo ($article_list[$i]['corp_num']); ?></td>
 					<td><?php echo ($article_list[$i]['source']); ?></td>
 					<td><?php echo ($article_list[$i]['mark']); ?></td>
 					<td><?php echo date('Y-m-d',$article_list[$i]['create_time']) ?></td>
 					<td><a href="<?php echo U('/Admin/index/editArticle',array('id'=>$article_list[$i]['id']));?>">编辑</a> |
-						<a href="javascript:;" onclick='del_article(<?php echo ($article_list[$i]["id"]); ?>,$(this))' class="js-ajax-delete">删除</a>
+						<a href="javascript:;" onclick='del_article(<?php echo ($article_list[$i]["id"]); ?>,$(this))' class="js-ajax-delete">删除</a>|
+						<a href="javascript:;" onclick='change_article(<?php echo ($article_list[$i]["id"]); ?>,$(this))' class="js-ajax-delete">一键转换</a>
 					</td>
 
 				 </tr><?php } ?>

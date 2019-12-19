@@ -41,11 +41,12 @@ class ArticleController extends Controller {
         return $return_addArticlePhotos_id;
     }
 
-    public function getArticleList($page_up,$page_num,$menu_id='',$title='',$start_time='',$end_time='',$admin_id='')
+    public function getArticleList($page_up,$page_num,$menu_id='',$title='',$business='',$start_time='',$end_time='',$admin_id='')
     {
         $admin_id && $data["a.admin_id"]=$admin_id;
         $menu_id && $data["a.cate_id"]=$menu_id;
         $title && $data["a.corp_name"]=array('like',"%$title%");
+        $business && $data["a.business"]=array('like',"%$business%");
         $start_time && $end_time && $data["a.create_time"]=array('between',array($start_time,$end_time));
         !isset($data["a.create_time"]) && $start_time && $data["a.create_time"]=array('EGT',$start_time);
         !isset($data["a.create_time"]) && $end_time && $data["a.create_time"]=array('ELT',$end_time);

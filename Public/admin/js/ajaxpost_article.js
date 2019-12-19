@@ -147,12 +147,13 @@ function sel_article_list() {
 	var corp_name=document.sel_article.corp_name.value;
 	var start_time=document.sel_article.start_time.value;
 	var end_time=document.sel_article.end_time.value;
+    var business=document.sel_article.business.value;
 	var url=document.sel_article.action;
 	// alert(url);
 	$.ajax({
 		url : url,
 		type : 'post',
-		data : {'cate_id':cate_id,'corp_name':corp_name,'start_time':start_time,'end_time':end_time},
+		data : {'cate_id':cate_id,'corp_name':corp_name,'business':business,'start_time':start_time,'end_time':end_time},
 		success : function(msg) {
 			document.article_list.innerHTML=msg;
 			data_toggle_tooltip();

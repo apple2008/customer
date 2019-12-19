@@ -69,6 +69,8 @@
 		 &nbsp; &nbsp;
 		企业名称：
 		<input type="text" name="corp_name" style="width: 200px;" value="" placeholder="请输入企业名称">
+		业务：
+		<input type="text" name="business" style="width: 200px;" value="" placeholder="请输入业务">
 		<input type="button" onclick="sel_article_list()" class="btn btn-primary" value="搜索">
 		<input type="reset" class="btn btn-danger" value="清空">
 	</form>
@@ -111,7 +113,7 @@
 				</tr>
 			</thead>
 			<tbody>
-			  <?php $__FOR_START_5886__=0;$__FOR_END_5886__=count($article_list);for($i=$__FOR_START_5886__;$i < $__FOR_END_5886__;$i+=1){ ?><tr>
+			  <?php $__FOR_START_25885__=0;$__FOR_END_25885__=count($article_list);for($i=$__FOR_START_25885__;$i < $__FOR_END_25885__;$i+=1){ ?><tr>
 				 <!--  <td>
 					<input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="<?php echo ($article_list[$i]['id']); ?>" title="ID:<?php echo ($article_list[$i]['id']); ?>"></td>-->
 					<td><b><?php echo ($article_list[$i]['id']); ?></b></td>
@@ -157,7 +159,7 @@
 </div>
 
 
-<script type="text/javascript" src="/Public/admin/js/ajaxpost_article.js?v=20191217"></script>
+<script type="text/javascript" src="/Public/admin/js/ajaxpost_article.js?v=20191229"></script>
 <!-- 时间控件 -->
 <script src="/Public/common/js/calendar.js"></script>
 		<script>

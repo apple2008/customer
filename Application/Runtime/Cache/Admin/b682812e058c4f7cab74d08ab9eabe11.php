@@ -109,7 +109,7 @@ right: initial !important;}
 		<div class="sidebar" id="sidebar">
 			<div id="nav_wraper" style="height: 904px; overflow: auto;">
 			<ul class="nav nav-list">
-			  <?php $__FOR_START_1981__=0;$__FOR_END_1981__=count($admin_menu_list);for($i=$__FOR_START_1981__;$i < $__FOR_END_1981__;$i+=1){ if(!empty($admin_menu_list[$i]['one'][0]['menu_name'])): ?><li>
+			  <?php $__FOR_START_20078__=0;$__FOR_END_20078__=count($admin_menu_list);for($i=$__FOR_START_20078__;$i < $__FOR_END_20078__;$i+=1){ if(!empty($admin_menu_list[$i]['one'][0]['menu_name'])): ?><li>
                      <a href="javascript:load('<?php echo ($admin_menu_list[$i]['url']); ?>')" class="dropdown-toggle">
                        <i class="fa fa-list normal"></i>
 					   <span class="menu-text normal"><?php echo ($admin_menu_list[$i]['menu_name']); ?></span>
@@ -121,7 +121,7 @@ right: initial !important;}
 				      <ul class="submenu">
 
 
-                        <?php $__FOR_START_4530__=0;$__FOR_END_4530__=count($admin_menu_list[$i]['one']);for($j=$__FOR_START_4530__;$j < $__FOR_END_4530__;$j+=1){ if(!empty($admin_menu_list[$i]['one'][$j]['sec'][0]['menu_name'])): ?><li>
+                        <?php $__FOR_START_6415__=0;$__FOR_END_6415__=count($admin_menu_list[$i]['one']);for($j=$__FOR_START_6415__;$j < $__FOR_END_6415__;$j+=1){ if(!empty($admin_menu_list[$i]['one'][$j]['sec'][0]['menu_name'])): ?><li>
                                 <a href="javascript:load('<?php echo ($admin_menu_list[$i]['one'][$j]['url']); ?>')" class="dropdown-toggle">&nbsp;
                                   <i class="fa fa-caret-right"></i>
 						            <span class="menu-text"><?php echo ($admin_menu_list[$i]['one'][$j]['menu_name']); ?></span>
@@ -129,7 +129,7 @@ right: initial !important;}
 							    </a>
                                   <ul class="submenu">
 
-                                  	<?php $__FOR_START_29955__=0;$__FOR_END_29955__=count($admin_menu_list[$i]['one'][$j]['sec']);for($o=$__FOR_START_29955__;$o < $__FOR_END_29955__;$o+=1){ ?><li>
+                                  	<?php $__FOR_START_28060__=0;$__FOR_END_28060__=count($admin_menu_list[$i]['one'][$j]['sec']);for($o=$__FOR_START_28060__;$o < $__FOR_END_28060__;$o+=1){ ?><li>
 			                                <a href="javascript:load('<?php echo ($admin_menu_list[$i]['one'][$j]['sec'][$o]['url']); ?>')">&nbsp;&nbsp;
 			                                  <i class="fa fa-angle-double-right"></i>
 									            <span class="menu-text"><?php echo ($admin_menu_list[$i]['one'][$j]['sec'][$o]['menu_name']); ?></span>

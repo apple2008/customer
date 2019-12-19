@@ -37,15 +37,16 @@ class IndexController extends Controller {
         $page_up = I("get.p", 1, 'int');
         $cate_id = trim(I("post.cate_id"));
         $corp_name = trim(I("post.corp_name"));
+        $business = trim(I("post.business"));
         $start_time = strtotime(trim(I("post.start_time")));
         $end_time = strtotime(trim(I("post.end_time")));
 
         $page_num = 10;
         $adminUserInfo = $_SESSION['AdminUserInfo'];
         if ($adminUserInfo['id'] > 1) {
-            $article_list = A("Article")->getArticleList($page_up, $page_num, $cate_id, $corp_name, $start_time, $end_time,$adminUserInfo['id']);
+            $article_list = A("Article")->getArticleList($page_up, $page_num, $cate_id, $corp_name,$business, $start_time, $end_time,$adminUserInfo['id']);
         }else{
-            $article_list = A("Article")->getArticleList($page_up, $page_num, $cate_id, $corp_name, $start_time, $end_time);
+            $article_list = A("Article")->getArticleList($page_up, $page_num, $cate_id, $corp_name,$business, $start_time, $end_time);
         }
 
         //显示页数
@@ -54,6 +55,7 @@ class IndexController extends Controller {
         }
         $cate_id && $article_data["cate_id"] = $cate_id;
         $corp_name && $article_data["corp_name"] = array('like', "%$corp_name%");
+        $business && $article_data["business"] = array('like', "%$business%");
 
         $start_time && $end_time && $article_data["create_time"] = array('between', array($start_time, $end_time));
         !isset($article_data["create_time"]) && $start_time && $article_data["create_time"] = array('EGT', $start_time);
@@ -484,18 +486,20 @@ class IndexController extends Controller {
         $page_up = I("get.p", 1, 'int');
         $status= trim(I("post.status"));
         $name = trim(I("post.name"));
+        $business = trim(I("post.business"));
         $adminUserInfo = $_SESSION['AdminUserInfo'];
 
         $page_num = 10;
         if ($adminUserInfo['id'] > 1) {
-            $school_list = A("DealUser")->getSchoolList($page_up, $page_num, $status, $name, $adminUserInfo['id']);
+            $school_list = A("DealUser")->getSchoolList($page_up, $page_num, $status, $name, $business,$adminUserInfo['id']);
         }else{
-            $school_list = A("DealUser")->getSchoolList($page_up, $page_num, $status, $name, '');
+            $school_list = A("DealUser")->getSchoolList($page_up, $page_num, $status, $name,$business, '');
         }
 
         //显示页数
         $status && $school_data["status"] = $status;
         $name && $school_data["corp_name"] = array('like', "%$name%");
+        $business && $school_data["business"] = array('like', "%$business%");
         if ($adminUserInfo['id'] > 1) {
             $school_data["admin_id"] = $adminUserInfo['id'];
         }

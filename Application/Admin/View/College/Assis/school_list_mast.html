@@ -21,15 +21,11 @@
 					<th width="70">项目状态</th>
 					<th width="150">企业名称</th>
 					<th width="150">地址</th>
-					<if condition="$admin_id eq 1">
-						<th width="70">联系人</th>
-					</if>
+					<th width="70">联系人</th>
 					<th width="70">职位</th>
-					<if condition="$admin_id eq 1">
-						<th width="100">电话</th>
-						<th width="100">手机</th>
-						<th width="100">邮箱</th>
-					</if>
+					<th width="100">电话</th>
+					<th width="100">手机</th>
+					<th width="100">邮箱</th>
 					<th width="70">业务</th>
 					<th width="60">辅导顾问</th>
 					<th width="50">首款</th>
@@ -57,15 +53,11 @@
 					</td>
 					<td>{$college_list[$i]['corp_name']}</td>
 					<td>{$college_list[$i]['address']}</td>
-					<if condition="$admin_id eq 1">
-					  <td>{$college_list[$i]['name']}</td>
-					</if>
+					<td>{$college_list[$i]['name']}</td>
 					<td>{$college_list[$i]['position']}</td>
-						<if condition="$admin_id eq 1">
-							<td>{$college_list[$i]['telphone']}</td>
-							<td>{$college_list[$i]['mobile']}</td>
-							<td>{$college_list[$i]['email']}</td>
-						</if>
+					<td>{$college_list[$i]['telphone']}</td>
+					<td>{$college_list[$i]['mobile']}</td>
+					<td>{$college_list[$i]['email']}</td>
 					<td>{$college_list[$i]['business']}</td>
 					<td>{$college_list[$i]['help_man']}</td>
 					<td>{$college_list[$i]['first_money']}</td>

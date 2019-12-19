@@ -562,44 +562,6 @@ class IndexController extends Controller {
         $this->display('College:college_major_manage');
     }
 
-    public function gradeManage() {
-        //分数管理
-        $page_up = I("get.p", 1, 'int');
-        $major_id = trim(I('post.mid'));
-        $year = trim(I('post.year'));
-        $page_num = 10;
-        $grade_list = A('College')->getGradeList($page_up, $page_num, $major_id, $year);
-        //显示页数
-        $major_id && $grade_data['mid'] = $major_id;
-        $year && $grade_data['year'] = $year;
-        $code && $grade_data['code'] = $code;
-        $grade_count = M('college_grade')->where($grade_data)->count();
-        $page = new \Think\Page($grade_count, $page_num);
-        $page_show = $page->show();
-        //ajax返回
-        if (IS_AJAX) {
-            $this->assign('college_list', $grade_list);
-            $this->assign('page', $page_show);
-            $shtml = $this->fetch('College:Assis/grade_list_mast');
-            $this->ajaxReturn($shtml);
-        }
-
-        $this->assign('level', A('College')->getLevel());
-        $this->assign("area", A('College')->getArea());
-        $this->assign('year', array(array('name' => '2015'), array('name' => '2016'), array('name' => '2017'),));
-        $this->assign('college_list', $grade_list);
-        $this->assign('page', $page_show);
-
-
-        $this->display('College:college_grade_manage');
-    }
-
-    /* 高考单栏目 */
-
-
-
-
-
 
     /* 张宁公司项目 */
 

@@ -98,11 +98,10 @@
 					<th width="70">审核项目</th>
 					<th width="150">企业名称</th>
 					<th width="210">地址</th>
-					<?php if($admin_id == 1): ?><th width="80">联系人</th><?php endif; ?>
+					 <th width="80">联系人</th>
 					<th width="90">职位</th>
-					<?php if($admin_id == 1): ?><th width="100">电话</th>
-						<th width="100">手机</th><?php endif; ?>
-
+					<th width="100">电话</th>
+					<th width="100">手机</th>
 					<th width="100">邮箱</th>
 					<th width="70">业务</th>
 					<th width="70">企业人数</th>
@@ -113,7 +112,7 @@
 				</tr>
 			</thead>
 			<tbody>
-			  <?php $__FOR_START_25885__=0;$__FOR_END_25885__=count($article_list);for($i=$__FOR_START_25885__;$i < $__FOR_END_25885__;$i+=1){ ?><tr>
+			  <?php $__FOR_START_21116__=0;$__FOR_END_21116__=count($article_list);for($i=$__FOR_START_21116__;$i < $__FOR_END_21116__;$i+=1){ ?><tr>
 				 <!--  <td>
 					<input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="<?php echo ($article_list[$i]['id']); ?>" title="ID:<?php echo ($article_list[$i]['id']); ?>"></td>-->
 					<td><b><?php echo ($article_list[$i]['id']); ?></b></td>
@@ -127,10 +126,10 @@
 					<td><?php echo ($article_list[$i]['project']); ?></td>
 					<td><?php echo ($article_list[$i]['corp_name']); ?></td>
 					<td><?php echo ($article_list[$i]['address']); ?></td>
-					<?php if($admin_id == 1): ?><td><?php echo ($article_list[$i]['name']); ?></td><?php endif; ?>
+					<td><?php echo ($article_list[$i]['name']); ?></td>
 					<td><?php echo ($article_list[$i]['position']); ?></td>
-					<?php if($admin_id == 1): ?><td><?php echo ($article_list[$i]['telphone']); ?></td>
-						<td><?php echo ($article_list[$i]['mobile']); ?></td><?php endif; ?>
+					<td><?php echo ($article_list[$i]['telphone']); ?></td>
+					<td><?php echo ($article_list[$i]['mobile']); ?></td>
                     <td><?php echo ($article_list[$i]['email']); ?></td>
 					<td><?php echo ($article_list[$i]['business']); ?></td>
 					<td><?php echo ($article_list[$i]['corp_num']); ?></td>

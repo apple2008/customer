@@ -32,7 +32,7 @@
                 <input type="hidden" name="uid" value="<?php echo ($id); ?>">
                 <table class="table table-bordered treeTable" id="authrule-tree">
                     <tbody>
-                    <?php $__FOR_START_12734__=0;$__FOR_END_12734__=count($admin_menu);for($i=$__FOR_START_12734__;$i < $__FOR_END_12734__;$i+=1){ ?><tr id="node-1" style="" class="initialized parent expanded">
+                    <?php $__FOR_START_20365__=0;$__FOR_END_20365__=count($admin_menu);for($i=$__FOR_START_20365__;$i < $__FOR_END_20365__;$i+=1){ ?><tr id="node-1" style="" class="initialized parent expanded">
                             <td style="padding-left:30px;">
                               <?php if(count($admin_menu[$i]['one'])): ?><span class="add_sub" style='font-weight:bolder; cursor:pointer; display:inline-block; transform:rotate(-90deg)'>▼</span>
                               <?php else: ?>
@@ -44,7 +44,7 @@
                               <?php echo ($admin_menu[$i]['menu_name']); ?>
                             </td>
                         </tr>
-                        <?php $__FOR_START_16927__=0;$__FOR_END_16927__=count($admin_menu[$i]['one']);for($j=$__FOR_START_16927__;$j < $__FOR_END_16927__;$j+=1){ ?><tr id="node-2" class="child-of-node-1 initialized parent expanded index<?php echo ($i); ?>" style="">
+                        <?php $__FOR_START_1346__=0;$__FOR_END_1346__=count($admin_menu[$i]['one']);for($j=$__FOR_START_1346__;$j < $__FOR_END_1346__;$j+=1){ ?><tr id="node-2" class="child-of-node-1 initialized parent expanded index<?php echo ($i); ?>" style="">
                                 <td style="padding-left: 50px;">
                                   <?php if(count($admin_menu[$i]['one'][$j]['sec'])): ?><span class="add_sub<?php echo ($i); ?> command" style='font-weight:bolder; cursor:pointer; display:inline-block; transform:rotate(-90deg)'>▼</span>
                                   <?php else: ?>
@@ -57,7 +57,7 @@
                                    <?php echo ($admin_menu[$i]['one'][$j]['menu_name']); ?>
                                 </td>
                             </tr>
-                            <?php $__FOR_START_18796__=0;$__FOR_END_18796__=count($admin_menu[$i]['one'][$j]['sec']);for($o=$__FOR_START_18796__;$o < $__FOR_END_18796__;$o+=1){ ?><tr id="node-3" class="child-of-node-2 parent initialized sec<?php echo ($i); echo ($j); ?>" style="">
+                            <?php $__FOR_START_2387__=0;$__FOR_END_2387__=count($admin_menu[$i]['one'][$j]['sec']);for($o=$__FOR_START_2387__;$o < $__FOR_END_2387__;$o+=1){ ?><tr id="node-3" class="child-of-node-2 parent initialized sec<?php echo ($i); echo ($j); ?>" style="">
                                     <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─
                                       <?php if(in_array($admin_menu[$i]['one'][$j]['sec'][$o]['id'],$admin_user_info['exa_juris'])): ?><input type="checkbox" name="menuid[]" value="<?php echo ($admin_menu[$i]['one'][$j]['sec'][$o]['id']); ?>" level="2" checked="" onclick="javascript:checknode(this);">
                                       <?php else: ?>

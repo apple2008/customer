@@ -202,7 +202,7 @@ border-radius: 8px;
 						</tr>
 						<tr>
 							<th>业务</th>
-							<td><input type="text" name="post[email]" id="business" value="" style="width: 400px" placeholder="请输入业务"></td>
+							<td><input type="text" name="post[business]" id="business" value="" style="width: 400px" placeholder="请输入业务"></td>
 						</tr>
 						<tr>
 							<th>企业人数</th>

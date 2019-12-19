@@ -20,15 +20,10 @@
 					<th width="70">审核项目</th>
 					<th width="150">企业名称</th>
 					<th width="210">地址</th>
-					<if condition="$admin_id eq 1">
-					 	<th width="80">联系人</th>
-					</if>
+					 <th width="80">联系人</th>
 					<th width="90">职位</th>
-					<if condition="$admin_id eq 1">
-						<th width="100">电话</th>
-						<th width="100">手机</th>
-					</if>
-
+					<th width="100">电话</th>
+					<th width="100">手机</th>
 					<th width="100">邮箱</th>
 					<th width="70">业务</th>
 					<th width="70">企业人数</th>
@@ -56,14 +51,10 @@
 					<td>{$article_list[$i]['project']}</td>
 					<td>{$article_list[$i]['corp_name']}</td>
 					<td>{$article_list[$i]['address']}</td>
-					<if condition="$admin_id eq 1">
-					   <td>{$article_list[$i]['name']}</td>
-					</if>
+					<td>{$article_list[$i]['name']}</td>
 					<td>{$article_list[$i]['position']}</td>
-					<if condition="$admin_id eq 1">
-						<td>{$article_list[$i]['telphone']}</td>
-						<td>{$article_list[$i]['mobile']}</td>
-					</if>
+					<td>{$article_list[$i]['telphone']}</td>
+					<td>{$article_list[$i]['mobile']}</td>
                     <td>{$article_list[$i]['email']}</td>
 					<td>{$article_list[$i]['business']}</td>
 					<td>{$article_list[$i]['corp_num']}</td>

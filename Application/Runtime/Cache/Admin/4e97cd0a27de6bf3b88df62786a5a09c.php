@@ -91,7 +91,7 @@
 				</tr>
 			</thead>
 			<tbody>
-			  <?php $__FOR_START_27515__=0;$__FOR_END_27515__=count($college_list);for($i=$__FOR_START_27515__;$i < $__FOR_END_27515__;$i+=1){ ?><tr>
+			  <?php $__FOR_START_13991__=0;$__FOR_END_13991__=count($college_list);for($i=$__FOR_START_13991__;$i < $__FOR_END_13991__;$i+=1){ ?><tr>
 				  <!-- <td>
 					<input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="<?php echo ($college_list[$i]['id']); ?>" title="ID:<?php echo ($college_list[$i]['id']); ?>"></td>-->
 					<td><b><?php echo ($college_list[$i]['id']); ?></b></td>
@@ -119,7 +119,7 @@
 					<td>
 					<a href="<?php echo U('/Admin/index/collegeSchoolEdit',array('id'=>$college_list[$i]['id']));?>">编辑</a> |
 					<a href="javascript:;" onclick='del_college(<?php echo ($college_list[$i]["id"]); ?>,$(this))' class="js-ajax-delete">删除</a>|
-					<a href="javascript:;" onclick='change_college(<?php echo ($college_list[$i]["id"]); ?>,$(this))' class="js-ajax-delete">一键转换</a>
+					<a href="javascript:;" onclick='change_college(<?php echo ($college_list[$i]["id"]); ?>,$(this))' class="js-ajax-delete">项目已完成</a>
 					</td>
 				 </tr><?php } ?>
 				

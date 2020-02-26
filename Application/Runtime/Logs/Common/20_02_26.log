@@ -4,3 +4,9 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
 ERR: 无法加载模块:Public
 
+[ 2020-02-26T16:00:29+08:00 ] 127.0.0.1 /Public/admin/images/btn.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+ERR: 无法加载模块:Public
+

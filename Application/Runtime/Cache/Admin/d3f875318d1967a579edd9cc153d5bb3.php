@@ -202,6 +202,10 @@ border-radius: 8px;
 							<td><input type="text" name="post[email]" id="email" value="<?php echo ($articlePart['email']); ?>" style="width: 400px" placeholder="请输入邮箱"></td>
 						</tr>
 						<tr>
+							<th>业务</th>
+							<td><input type="text" name="post[email]" id="business" value="<?php echo ($articlePart['business']); ?>" style="width: 400px" placeholder="请输入业务"></td>
+						</tr>
+						<tr>
 							<th>企业人数</th>
 							<td><input type="text" name="post[corp_num]" id="corp_num" value="<?php echo ($articlePart['corp_num']); ?>" style="width: 400px" placeholder="请输入企业人数"></td>
 						</tr>

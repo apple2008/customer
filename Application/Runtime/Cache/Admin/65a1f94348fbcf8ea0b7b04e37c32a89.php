@@ -90,7 +90,7 @@
             </li>
         </ul>
     </div> -->
-    <h4 class="well">系统信息</h4>
+    <!--<h4 class="well">系统信息</h4>-->
 
     <div class="home_info">
         <ul>
@@ -105,7 +105,7 @@
             <li><em>执行时间限制</em> <span>30s</span></li>
             <li><em>剩余空间</em> <span></span></li> -->
 
-            <li><em>PHP_VERSION</em> <span>php版本</span> <span><?php echo PHP_VERSION ?></span></li>
+            <!--<li><em>PHP_VERSION</em> <span>php版本</span> <span><?php echo PHP_VERSION ?></span></li>
 
             <li><em>SYSTEMROOT</em> <span>系统启动文件夹</span> <span><?php echo ($server['SYSTEMROOT']); ?></span></li>
 
@@ -181,7 +181,7 @@
             <li><em>PATH_INFO</em> <span></span> <span><?php echo ($server['PATH_INFO']); ?></span></li>
 
         </ul>
-    </div>
+    </div>-->
     <!-- <h4 class="well">发起团队</h4> -->
 
     <!-- <div class="home_info" id="home_devteam">

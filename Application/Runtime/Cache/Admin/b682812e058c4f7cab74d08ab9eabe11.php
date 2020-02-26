@@ -56,21 +56,21 @@ right: initial !important;}
 		<div class="navbar-inner">
 			<div class="container-fluid">
 				<a href="http://www.wazyb.com/" class="brand">
-				 <small>客户管理系统后台管理中心</small>
+				 <small>汉东客户管理系统中心</small>
 				</a>
 				<div class="pull-left nav_shortcuts">
-					<a class="btn btn-small btn-success" href="javascript:load('<?php echo U('/Admin/index/indexMenuManage');?>')" title="分类管理">
+					<!--<a class="btn btn-small btn-success" href="javascript:load('<?php echo U('/Admin/index/indexMenuManage');?>')" title="分类管理">
 						<i class="fa fa-th"></i>
-					</a>					
+					</a>
 					<a class="btn btn-small btn-info" href="javascript:load('<?php echo U('/Admin/index/articleManage');?>')" title="文章管理">
 						<i class="fa fa-pencil"></i>
 					</a>
 					<a class="btn btn-small btn-danger" href="" title="清除缓存">
 						<i class="fa fa-trash-o"></i>
-					</a>					
+					</a>
 					<a class="btn btn-small" href="" title="后台菜单">
 						<i class="fa fa-list"></i>
-					</a>
+					</a>-->
 				</div>
 
 				<ul class="nav simplewind-nav pull-right">
@@ -109,7 +109,7 @@ right: initial !important;}
 		<div class="sidebar" id="sidebar">
 			<div id="nav_wraper" style="height: 904px; overflow: auto;">
 			<ul class="nav nav-list">
-			  <?php $__FOR_START_28056__=0;$__FOR_END_28056__=count($admin_menu_list);for($i=$__FOR_START_28056__;$i < $__FOR_END_28056__;$i+=1){ if(!empty($admin_menu_list[$i]['one'][0]['menu_name'])): ?><li>
+			  <?php $__FOR_START_30353__=0;$__FOR_END_30353__=count($admin_menu_list);for($i=$__FOR_START_30353__;$i < $__FOR_END_30353__;$i+=1){ if(!empty($admin_menu_list[$i]['one'][0]['menu_name'])): ?><li>
                      <a href="javascript:load('<?php echo ($admin_menu_list[$i]['url']); ?>')" class="dropdown-toggle">
                        <i class="fa fa-list normal"></i>
 					   <span class="menu-text normal"><?php echo ($admin_menu_list[$i]['menu_name']); ?></span>
@@ -121,7 +121,7 @@ right: initial !important;}
 				      <ul class="submenu">
 
 
-                        <?php $__FOR_START_10737__=0;$__FOR_END_10737__=count($admin_menu_list[$i]['one']);for($j=$__FOR_START_10737__;$j < $__FOR_END_10737__;$j+=1){ if(!empty($admin_menu_list[$i]['one'][$j]['sec'][0]['menu_name'])): ?><li>
+                        <?php $__FOR_START_23030__=0;$__FOR_END_23030__=count($admin_menu_list[$i]['one']);for($j=$__FOR_START_23030__;$j < $__FOR_END_23030__;$j+=1){ if(!empty($admin_menu_list[$i]['one'][$j]['sec'][0]['menu_name'])): ?><li>
                                 <a href="javascript:load('<?php echo ($admin_menu_list[$i]['one'][$j]['url']); ?>')" class="dropdown-toggle">&nbsp;
                                   <i class="fa fa-caret-right"></i>
 						            <span class="menu-text"><?php echo ($admin_menu_list[$i]['one'][$j]['menu_name']); ?></span>
@@ -129,7 +129,7 @@ right: initial !important;}
 							    </a>
                                   <ul class="submenu">
 
-                                  	<?php $__FOR_START_31190__=0;$__FOR_END_31190__=count($admin_menu_list[$i]['one'][$j]['sec']);for($o=$__FOR_START_31190__;$o < $__FOR_END_31190__;$o+=1){ ?><li>
+                                  	<?php $__FOR_START_29175__=0;$__FOR_END_29175__=count($admin_menu_list[$i]['one'][$j]['sec']);for($o=$__FOR_START_29175__;$o < $__FOR_END_29175__;$o+=1){ ?><li>
 			                                <a href="javascript:load('<?php echo ($admin_menu_list[$i]['one'][$j]['sec'][$o]['url']); ?>')">&nbsp;&nbsp;
 			                                  <i class="fa fa-angle-double-right"></i>
 									            <span class="menu-text"><?php echo ($admin_menu_list[$i]['one'][$j]['sec'][$o]['menu_name']); ?></span>

@@ -18,8 +18,8 @@ class ArticleController extends Controller {
             # code...
             return false;
         }
-       // $info =  M('mind_user')->where("id = $id")->find();
-        //$data['mark'] = $info['mark'];
+        $info =  M('mind_user')->where("id = $id")->find();
+        $data['mark'] = $info['mark'].','.$data['mark'];
         $return_addArticle_num=M("mind_user")->where(array('id'=>$id))->save($data);
         return $return_addArticle_num;
     }
@@ -51,7 +51,10 @@ class ArticleController extends Controller {
         !isset($data["a.create_time"]) && $start_time && $data["a.create_time"]=array('EGT',$start_time);
         !isset($data["a.create_time"]) && $end_time && $data["a.create_time"]=array('ELT',$end_time);
         $return_articleList=M("mind_user as a")->where($data)->order("create_time DESC")->page($page_up,$page_num)->select();
-        return $return_articleList;
+        if (!empty($return_articleList)){
+            return $return_articleList;
+        }
+
     }
     /**
      *@param articlePart 通过文章id获取到文章的所有信息

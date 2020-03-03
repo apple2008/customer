@@ -43,12 +43,35 @@ class IndexController extends Controller {
 
         $page_num = 10;
         $adminUserInfo = $_SESSION['AdminUserInfo'];
-        if ($adminUserInfo['id'] > 1) {
-            $article_list = A("Article")->getArticleList($page_up, $page_num, $cate_id, $corp_name,$business, $start_time, $end_time,$adminUserInfo['id']);
-        }else{
-            $article_list = A("Article")->getArticleList($page_up, $page_num, $cate_id, $corp_name,$business, $start_time, $end_time);
-        }
+        if ($adminUserInfo['id'] > 1 && in_array($adminUserInfo['id'],array(2,3,4))) {
+            $uid = $adminUserInfo['id'];
+            if ($uid == 2){
+                $uid = 1;
+            }elseif($uid == 3){
+                $uid = 2;
+            }elseif($uid == 4){
+                $uid = 3;
+            }
+            $uids = M('user_pid')->where("pid = $uid")->field("uid")->select();
+            if (!empty($uids)) {
+                foreach ($uids as $val) {
+                    $article_list = A("Article")->getArticleList($page_up, $page_num, $cate_id, $corp_name,$business, $start_time, $end_time,$val['uid']);
+                    if (count($article_list) > 0){
+                        $list[] = $article_list;
+                    }
+                }
+                foreach ($list as $k => $map){
+                    foreach ($map as $key => $maps){
+                        $article_lists[] = $maps;
+                    }
+                }
 
+            }
+        }elseif ( $adminUserInfo['id'] > 4){
+            $article_lists = A("Article")->getArticleList($page_up, $page_num, $cate_id, $corp_name,$business, $start_time, $end_time,$adminUserInfo['id']);
+        } else{
+            $article_lists = A("Article")->getArticleList($page_up, $page_num, $cate_id, $corp_name,$business, $start_time, $end_time);
+        }
         //显示页数
         if ($adminUserInfo['id'] > 1) {
             $article_data["admin_id"] = $adminUserInfo['id'];
@@ -67,7 +90,7 @@ class IndexController extends Controller {
         //ajax返回
         if (IS_AJAX) {
             # code...
-            $this->assign("article_list", $article_list);
+            $this->assign("article_list", $article_lists);
             $this->assign("page", $page_show);
             $this->assign('current_url', $current_url);
             $this->assign('admin_id', $adminUserInfo['id']);
@@ -80,7 +103,7 @@ class IndexController extends Controller {
         $this->assign("index_menu_list", $index_menu_list);
 
         $this->assign('admin_id', $adminUserInfo['id']);
-        $this->assign("article_list", $article_list);
+        $this->assign("article_list", $article_lists);
         $this->assign("page", $page_show);
         $this->assign('current_url', $current_url);
         $this->display("Admin:article_Manage");
@@ -490,12 +513,34 @@ class IndexController extends Controller {
         $adminUserInfo = $_SESSION['AdminUserInfo'];
 
         $page_num = 10;
-        if ($adminUserInfo['id'] > 1) {
-            $school_list = A("DealUser")->getSchoolList($page_up, $page_num, $status, $name, $business,$adminUserInfo['id']);
+        if ($adminUserInfo['id'] > 1 && in_array($adminUserInfo['id'],array(2,3,4))) {
+            $uid = $adminUserInfo['id'];
+            if ($uid == 2){
+                $uid = 1;
+            }elseif($uid == 3){
+                $uid = 2;
+            }elseif($uid == 4){
+                $uid = 3;
+            }
+            $uids = M('user_pid')->where("pid = $uid")->field("uid")->select();
+            if (!empty($uids)) {
+                foreach ($uids as $val) {
+                    $school_list = A("DealUser")->getSchoolList($page_up, $page_num, $status, $name, $business,$val['uid']);
+                    if (count($school_list) > 0){
+                        $school[] = $school_list;
+                    }
+                }
+                foreach ($school as $k=>$map){
+                    foreach ($map as $key=>$maps){
+                        $school_lists[] = $maps;
+                    }
+                }
+            }
+        }elseif($adminUserInfo['id'] > 4){
+            $school_lists = A("DealUser")->getSchoolList($page_up, $page_num, $status, $name, $business,$adminUserInfo['id']);
         }else{
-            $school_list = A("DealUser")->getSchoolList($page_up, $page_num, $status, $name,$business, '');
+            $school_lists = A("DealUser")->getSchoolList($page_up, $page_num, $status, $name,$business, '');
         }
-
         //显示页数
         $status && $school_data["status"] = $status;
         $name && $school_data["corp_name"] = array('like', "%$name%");
@@ -510,13 +555,13 @@ class IndexController extends Controller {
         //ajax返回
         if (IS_AJAX) {
             # code...
-            $this->assign("college_list", $school_list);
+            $this->assign("college_list", $school_lists);
             $this->assign("page", $page_show);
             $shtml = $this->fetch("College:Assis/school_list_mast");
             $this->ajaxReturn($shtml);
         }
        // $this->assign("area", A('College')->getArea());
-        $this->assign("college_list", $school_list);
+        $this->assign("college_list", $school_lists);
         $this->assign("page", $page_show);
         $this->assign("admin_id", $adminUserInfo['id']);
         $this->display('College:college_school_manage');

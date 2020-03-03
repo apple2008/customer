@@ -216,7 +216,7 @@ border-radius: 8px;
 						<tr>
 							<th>跟进记录</th>
 							<td>
-								<textarea name="post[mark]" id="mark" style="width: 98%; height: 70px;" placeholder="请填写跟进记录"><?php echo ($articlePart['mark']); ?></textarea>
+								<textarea name="post[mark]" id="mark" style="width: 98%; height: 70px;" placeholder="请填写跟进记录"></textarea>
 							</td>
 						</tr>
 						</tbody>

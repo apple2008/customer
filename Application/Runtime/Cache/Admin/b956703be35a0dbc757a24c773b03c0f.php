@@ -54,6 +54,6 @@
 
 
 
-<script type="text/javascript" src="/Public/admin/js/ajaxpost_admin.js"></script>
+<script type="text/javascript" src="/Public/admin/js/ajaxpost_admin.js?v=2020"></script>
 </body>
 </html>

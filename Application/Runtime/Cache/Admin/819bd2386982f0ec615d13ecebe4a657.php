@@ -25,6 +25,17 @@
 		<form id="add_admin_user" name="add_admin_user" action="<?php echo U('/Admin/AdminUser/addAdminUser');?>" class="form-horizontal js-ajax-form" novalidate="novalidate">
 			<fieldset>
 				<div class="control-group">
+
+					<label class="control-label" for="input-old-password">所属经理</label>
+					<div class="controls">
+						<select name="cate_id">
+							<option value="0">请选择</option>
+							<option value="1">经理001</option>
+							<option value="2">经理002</option>
+							<option value="3">经理003</option>
+						</select>
+					</div>
+					&nbsp;&nbsp;
 					<label class="control-label" for="input-old-password">用户名</label>
 					<div class="controls">
 						<input type="text" class="input-xlarge" id="input-old-password" name="user">初始密码为六个0
@@ -43,6 +54,6 @@
 
 
 
-<script type="text/javascript" src="/Public/admin/js/ajaxpost_admin_user.js"></script>
+<script type="text/javascript" src="/Public/admin/js/ajaxpost_admin_user.js?v=2020"></script>
 </body>
 </html>

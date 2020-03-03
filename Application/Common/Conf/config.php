@@ -4,10 +4,10 @@ return array(
     'URL_CASE_INSENSITIVE'  =>  false,
 
     'DB_TYPE'               =>  'mysql',     // 数据库类型
-    'DB_HOST'               =>  '39.108.157.103', // 服务器地址
-    'DB_NAME'               =>  'customer',          // 数据库名
+    'DB_HOST'               =>  '127.0.0.1', // 服务器地址
+    'DB_NAME'               =>  'stock',          // 数据库名
     'DB_USER'               =>  'root',      // 用户名
-    'DB_PWD'                =>  'MyNewPasdfs4!',          // 密码
+    'DB_PWD'                =>  '',          // 密码
     'DB_PORT'               =>  '3306',        // 端口
     'DB_PREFIX'             =>  'customer_',    // 数据库表前缀
     'DB_PARAMS'             =>  array(), // 数据库连接参数    

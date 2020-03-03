@@ -105,13 +105,16 @@ class AdminUserController extends Controller {
         $return_adminUserList=M("admin_user")->where($data)->order("id DESC")->page($page_up,$page_num)->field("id,user,user_name")->select();
         return $return_adminUserList;
     }
-    public function addAdminUserRealize($user,$pwd)
+    public function addAdminUserRealize($cate_id,$user,$pwd)
     {
         //添加管理员用户实现方法
         if (empty($user) || empty($pwd)) {
             return false;
         }
         $admin_user_id=M('admin_user')->add(array('user'=>$user,'pwd'=>$pwd));
+        if ($cate_id > 0 ) {
+            M('user_pid')->add(array('pid'=>$cate_id,'name'=>$user,'uid'=>$admin_user_id));
+        }
         if ($admin_user_id>0) {
             M('admin_user_info')->add(array('uid'=>$admin_user_id));
             M('admin_user_record')->add(array('uid'=>$admin_user_id));
@@ -230,8 +233,9 @@ class AdminUserController extends Controller {
     public function addAdminUser()
     {
         $user=trim(I('post.user'));
+        $cate_id=trim(I('post.cate_id'));
         $pwd='000000';
-        if ($this->addAdminUserRealize($user,$this->encrypt($pwd))>0) {
+        if ($this->addAdminUserRealize($cate_id,$user,$this->encrypt($pwd))>0) {
             $return_data['status']=1;
         }else{
             $return_data['status']=0;

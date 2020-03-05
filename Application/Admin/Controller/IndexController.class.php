@@ -65,7 +65,8 @@ class IndexController extends Controller {
                         $article_lists[] = $maps;
                     }
                 }
-
+            } else{
+                $article_lists = A("Article")->getArticleList($page_up, $page_num, $cate_id, $corp_name,$business, $start_time, $end_time,$adminUserInfo['id']);
             }
         }elseif ( $adminUserInfo['id'] > 4){
             $article_lists = A("Article")->getArticleList($page_up, $page_num, $cate_id, $corp_name,$business, $start_time, $end_time,$adminUserInfo['id']);
@@ -535,6 +536,8 @@ class IndexController extends Controller {
                         $school_lists[] = $maps;
                     }
                 }
+            }else{
+                $school_lists = A("DealUser")->getSchoolList($page_up, $page_num, $status, $name, $business,$adminUserInfo['id']);
             }
         }elseif($adminUserInfo['id'] > 4){
             $school_lists = A("DealUser")->getSchoolList($page_up, $page_num, $status, $name, $business,$adminUserInfo['id']);

@@ -226,7 +226,7 @@ border-radius: 8px;
 
 			<div class="form-actions">
 				<a class="btn btn-primary js-ajax-submit" href="javascript:;" onclick="ajax_post_article_edit()">提交</a>
-				<a class="btn" href="javascript:;">返回</a>
+				<a class="btn" href="javascript:history.back(-1)">返回</a>
 				<!-- <button class="btn btn-primary js-ajax-submit" type="submit">提交1</button> -->
 			</div>
 		</form>

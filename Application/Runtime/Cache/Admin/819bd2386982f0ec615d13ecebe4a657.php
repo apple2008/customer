@@ -30,9 +30,9 @@
 					<div class="controls">
 						<select name="cate_id">
 							<option value="0">请选择</option>
-							<option value="1">经理001</option>
-							<option value="2">经理002</option>
-							<option value="3">经理003</option>
+							<option value="1">朱云飞</option>
+							<option value="2">徐荣</option>
+							<option value="3">候志峰</option>
 						</select>
 					</div>
 					&nbsp;&nbsp;

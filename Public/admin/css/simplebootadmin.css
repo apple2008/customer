@@ -4,4 +4,4 @@
 .wrap {
 padding: 20px 20px 70px;
 }
-.table td {font-size:12px;}
+.table td {font-size:12px;word-wrap: break-word;word-break: break-all;}

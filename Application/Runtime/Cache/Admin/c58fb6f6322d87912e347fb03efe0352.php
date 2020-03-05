@@ -112,7 +112,7 @@
 				</tr>
 			</thead>
 			<tbody>
-			  <?php $__FOR_START_9430__=0;$__FOR_END_9430__=count($article_list);for($i=$__FOR_START_9430__;$i < $__FOR_END_9430__;$i+=1){ ?><tr>
+			  <?php $__FOR_START_3698__=0;$__FOR_END_3698__=count($article_list);for($i=$__FOR_START_3698__;$i < $__FOR_END_3698__;$i+=1){ ?><tr>
 				 <!--  <td>
 					<input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="<?php echo ($article_list[$i]['id']); ?>" title="ID:<?php echo ($article_list[$i]['id']); ?>"></td>-->
 					<td><b><?php echo ($article_list[$i]['id']); ?></b></td>
@@ -137,7 +137,7 @@
 					<td><?php echo ($article_list[$i]['mark']); ?></td>
 					<td><?php echo date('Y-m-d',$article_list[$i]['create_time']) ?></td>
 					<td><a href="<?php echo U('/Admin/index/editArticle',array('id'=>$article_list[$i]['id']));?>">编辑</a> |
-						<a href="javascript:;" onclick='del_article(<?php echo ($article_list[$i]["id"]); ?>,$(this))' class="js-ajax-delete">删除</a>|
+						<?php if($admin_id == 1): ?><a href="javascript:;" onclick='del_article(<?php echo ($article_list[$i]["id"]); ?>,$(this))' class="js-ajax-delete">删除</a>|<?php endif; ?>
 						<a href="javascript:;" onclick='change_article(<?php echo ($article_list[$i]["id"]); ?>,$(this))' class="js-ajax-delete">成交</a>
 					</td>
 

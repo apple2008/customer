@@ -82,7 +82,7 @@
 
 
 
-<script type="text/javascript" src="/Public/Admin/js/ajaxpost_admin.js"></script>
+<script type="text/javascript" src="/Public/admin/js/ajaxpost_admin.js"></script>
 <!-- 时间控件 -->
 <script src="/Public/common/js/calendar.js"></script>
 		<script>

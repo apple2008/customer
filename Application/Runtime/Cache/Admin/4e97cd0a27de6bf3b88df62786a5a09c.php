@@ -62,7 +62,7 @@
 			<button class="btn btn-primary btn-small js-articles-copy" type="button">批量复制</button>
 			<button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/delete" data-subcheck="true" data-msg="您确定删除吗？">删除</button>
 		</div>-->
-		
+
         <input id="current_url" type="hidden" name="current_url" value="<?php echo ($current_url); ?>" />
 
 		<table class="table table-hover table-bordered table-list">
@@ -91,7 +91,7 @@
 				</tr>
 			</thead>
 			<tbody>
-			  <?php $__FOR_START_21277__=0;$__FOR_END_21277__=count($college_list);for($i=$__FOR_START_21277__;$i < $__FOR_END_21277__;$i+=1){ ?><tr>
+			  <?php $__FOR_START_9824__=0;$__FOR_END_9824__=count($college_list);for($i=$__FOR_START_9824__;$i < $__FOR_END_9824__;$i+=1){ ?><tr>
 				  <!-- <td>
 					<input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="<?php echo ($college_list[$i]['id']); ?>" title="ID:<?php echo ($college_list[$i]['id']); ?>"></td>-->
 					<td><b><?php echo ($college_list[$i]['id']); ?></b></td>
@@ -123,19 +123,19 @@
 						<?php if($college_list[$i]['status'] == 2): ?>|项目已完成<?php endif; ?>
 					</td>
 				 </tr><?php } ?>
-				
+
 
 			</tbody>
-            
-			
-			
+
+
+
 		</table>
 			<div id="page" class="wp-paginate">
              	<?php echo ($page); ?>
             </div>
 
-            
-            
+
+
 	</form>
 </div>
 

@@ -575,6 +575,7 @@ class IndexController extends Controller {
         if (IS_AJAX) {
             # code...
             $this->assign("college_list", $school_lists);
+            $this->assign("admin_id", $adminUserInfo['id']);
             $this->assign("page", $page_show);
             $shtml = $this->fetch("College:Assis/school_list_mast");
             $this->ajaxReturn($shtml);

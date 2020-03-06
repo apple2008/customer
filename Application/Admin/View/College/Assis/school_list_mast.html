@@ -66,11 +66,18 @@
 					<td>{$college_list[$i]['check_setup']}</td>
 					<td><php>echo $college_list[$i]['last_check_time']</php></td>
 					<td>
-					<a href="{:U('/Admin/index/collegeSchoolEdit',array('id'=>$college_list[$i]['id']))}">编辑</a> |
+					<a href="{:U('/Admin/index/collegeSchoolEdit',array('id'=>$college_list[$i]['id']))}">编辑</a>
 						<if condition="$admin_id eq 1">
-							<a href="javascript:;" onclick='del_college({$college_list[$i]["id"]},$(this))' class="js-ajax-delete">删除</a>|
+							<a href="javascript:;" onclick='del_college({$college_list[$i]["id"]},$(this))' class="js-ajax-delete">|删除</a>|
 						</if>
-					<a href="javascript:;" onclick='change_college({$college_list[$i]["id"]},$(this))' class="js-ajax-delete">项目已完成</a>
+						<if condition="($admin_id eq 2) OR ($admin_id eq 3) OR ($admin_id eq 4) ">
+							<if condition="$college_list[$i]['status'] eq 1">
+								<a href="javascript:;" onclick='change_college({$college_list[$i]["id"]},$(this))' class="js-ajax-delete">|项目已完成</a>
+							</if>
+						</if>
+						<if condition="$college_list[$i]['status'] eq 2">
+							|项目已完成
+						</if>
 					</td>
 				 </tr>
 			  </for>

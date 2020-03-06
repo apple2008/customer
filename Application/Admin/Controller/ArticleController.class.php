@@ -50,7 +50,7 @@ class ArticleController extends Controller {
         $start_time && $end_time && $data["a.create_time"]=array('between',array($start_time,$end_time));
         !isset($data["a.create_time"]) && $start_time && $data["a.create_time"]=array('EGT',$start_time);
         !isset($data["a.create_time"]) && $end_time && $data["a.create_time"]=array('ELT',$end_time);
-        $return_articleList=M("mind_user as a")->where($data)->order("create_time DESC")->page($page_up,$page_num)->select();
+        $return_articleList=M("mind_user as a")->where($data)->order("create_time ASC")->page($page_up,$page_num)->select();
         if (!empty($return_articleList)){
             return $return_articleList;
         }

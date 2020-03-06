@@ -16,3 +16,45 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
 ERR: 无法加载模块:Public
 
+[ 2020-03-06T14:24:52+08:00 ] 127.0.0.1 /Public/admin/images/btn.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001527s ]
+ERR: 无法加载模块:Public
+
+[ 2020-03-06T14:40:10+08:00 ] 127.0.0.1 /Public/admin/images/btn.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
+ERR: 无法加载模块:Public
+
+[ 2020-03-06T15:39:48+08:00 ] 127.0.0.1 /Public/admin/images/btn.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+ERR: 无法加载模块:Public
+
+[ 2020-03-06T16:41:34+08:00 ] 127.0.0.1 /Public/admin/images/btn.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+ERR: 无法加载模块:Public
+
+[ 2020-03-06T16:52:32+08:00 ] 127.0.0.1 /Public/admin/images/btn.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+ERR: 无法加载模块:Public
+
+[ 2020-03-06T16:55:26+08:00 ] 127.0.0.1 /Public/admin/images/btn.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001805s ]
+ERR: 无法加载模块:Public
+
+[ 2020-03-06T16:56:01+08:00 ] 127.0.0.1 /Public/admin/images/btn.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001822s ]
+ERR: 无法加载模块:Public
+

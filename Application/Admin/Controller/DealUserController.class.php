@@ -176,7 +176,7 @@ class DealUserController extends Controller {
         $area_id && $data["s.status"]=$area_id;
         $name && $data["s.corp_name"]=array('like',"%$name%");
         $business && $data["s.business"]=array('like',"%$business%");
-        $return_schoolList=M("deal_user as s")->where($data)->order("s.id DESC")->page($page_up,$page_num)->select();
+        $return_schoolList=M("deal_user as s")->where($data)->order("s.id ASC")->page($page_up,$page_num)->select();
         return $return_schoolList;
     }
 

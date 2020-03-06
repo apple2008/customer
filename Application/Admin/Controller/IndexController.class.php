@@ -45,13 +45,13 @@ class IndexController extends Controller {
         $adminUserInfo = $_SESSION['AdminUserInfo'];
         if ($adminUserInfo['id'] > 1 && in_array($adminUserInfo['id'],array(2,3,4))) {
             $uid = $adminUserInfo['id'];
-            if ($uid == 2){
+            /*if ($uid == 2){
                 $uid = 1;
             }elseif($uid == 3){
                 $uid = 2;
             }elseif($uid == 4){
                 $uid = 3;
-            }
+            }*/
             $uids = M('user_pid')->where("pid = $uid")->field("uid")->select();
             $count = count($uids);
 
@@ -524,13 +524,13 @@ class IndexController extends Controller {
         $page_num = 10;
         if ($adminUserInfo['id'] > 1 && in_array($adminUserInfo['id'],array(2,3,4))) {
             $uid = $adminUserInfo['id'];
-            if ($uid == 2){
+          /*  if ($uid == 2){
                 $uid = 1;
             }elseif($uid == 3){
                 $uid = 2;
             }elseif($uid == 4){
                 $uid = 3;
-            }
+            }*/
             $uids = M('user_pid')->where("pid = $uid")->field("uid")->select();
             $count = count($uids);
 

@@ -112,7 +112,7 @@
 				</tr>
 			</thead>
 			<tbody>
-			  <?php $__FOR_START_11589__=0;$__FOR_END_11589__=count($article_list);for($i=$__FOR_START_11589__;$i < $__FOR_END_11589__;$i+=1){ ?><tr>
+			  <?php $__FOR_START_27844__=0;$__FOR_END_27844__=count($article_list);for($i=$__FOR_START_27844__;$i < $__FOR_END_27844__;$i+=1){ ?><tr>
 				 <!--  <td>
 					<input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="<?php echo ($article_list[$i]['id']); ?>" title="ID:<?php echo ($article_list[$i]['id']); ?>"></td>-->
 					<td><b><?php echo ($article_list[$i]['id']); ?></b></td>

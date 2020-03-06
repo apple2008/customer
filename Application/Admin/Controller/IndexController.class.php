@@ -53,7 +53,17 @@ class IndexController extends Controller {
                 $uid = 3;
             }
             $uids = M('user_pid')->where("pid = $uid")->field("uid")->select();
+            $count = count($uids);
+
+            if (empty($uids)){
+                $uids = array($adminUserInfo['id']);
+            }
             if (!empty($uids)) {
+                foreach ($uids as $k => $val) {
+                    if ($k == $count-1) {
+                        $uids[] = array('uid' => $adminUserInfo['id']);
+                    }
+                }
                 foreach ($uids as $val) {
                     $article_list = A("Article")->getArticleList($page_up, $page_num, $cate_id, $corp_name,$business, $start_time, $end_time,$val['uid']);
                     if (count($article_list) > 0){
@@ -65,8 +75,6 @@ class IndexController extends Controller {
                         $article_lists[] = $maps;
                     }
                 }
-            } else{
-                $article_lists = A("Article")->getArticleList($page_up, $page_num, $cate_id, $corp_name,$business, $start_time, $end_time,$adminUserInfo['id']);
             }
         }elseif ( $adminUserInfo['id'] > 4){
             $article_lists = A("Article")->getArticleList($page_up, $page_num, $cate_id, $corp_name,$business, $start_time, $end_time,$adminUserInfo['id']);
@@ -524,7 +532,17 @@ class IndexController extends Controller {
                 $uid = 3;
             }
             $uids = M('user_pid')->where("pid = $uid")->field("uid")->select();
+            $count = count($uids);
+
+            if (empty($uids)){
+                $uids = array($adminUserInfo['id']);
+            }
             if (!empty($uids)) {
+                foreach ($uids as $k => $val) {
+                    if ($k == $count-1) {
+                        $uids[] = array('uid' => $adminUserInfo['id']);
+                    }
+                }
                 foreach ($uids as $val) {
                     $school_list = A("DealUser")->getSchoolList($page_up, $page_num, $status, $name, $business,$val['uid']);
                     if (count($school_list) > 0){
@@ -536,8 +554,6 @@ class IndexController extends Controller {
                         $school_lists[] = $maps;
                     }
                 }
-            }else{
-                $school_lists = A("DealUser")->getSchoolList($page_up, $page_num, $status, $name, $business,$adminUserInfo['id']);
             }
         }elseif($adminUserInfo['id'] > 4){
             $school_lists = A("DealUser")->getSchoolList($page_up, $page_num, $status, $name, $business,$adminUserInfo['id']);
